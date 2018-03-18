@@ -1,13 +1,13 @@
 # Webpack Boilerplate
 Webpack 4 boilerplate uses webpack-dev-server, babel and sass loaders.
 
-### Getting started
+## Getting started
 
 Clone the repo and install dependencies with:
 
 #### `npm install` or `yarn`
 
-### Development
+## Development
 
 To run project on local with livereload:
 
@@ -24,7 +24,7 @@ if(!PRODUCTION) {
 Dev server will run on [http://localhost:8181](http://localhost:8181) by default.
 
 
-### Building
+## Building
 
 To create a minified production build, simply run.
 
