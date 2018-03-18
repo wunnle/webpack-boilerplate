@@ -1,7 +1,6 @@
 # Webpack Boilerplate
 Webpack 4 boilerplate uses webpack-dev-server, babel and sass loaders.
 
-### Setup
 
 Clone the repo and install dependencies with:
 
