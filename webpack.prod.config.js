@@ -1,9 +1,7 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-
-
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -12,11 +10,6 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: '[name].js'
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Webpack app'
-    })
-  ],
   module: {
     rules: [
       {
@@ -46,9 +39,9 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new HtmlWebpackPlugin({
-      title: 'Webpack app'
-    }),
-    new UglifyJSPlugin()
-  ]
+    new UglifyJSPlugin(),
+    new CopyWebpackPlugin([{
+      from: './*.html'
+    }])
+  ],
 }
