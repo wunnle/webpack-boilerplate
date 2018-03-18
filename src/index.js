@@ -1,6 +1,9 @@
 import Cat from './module.js'
 import './css/style.scss'
-import '../index.html'
+
+if(!PRODUCTION) {
+  require('../index.html')
+}
 
 const Lion = new Cat('Lion')
 

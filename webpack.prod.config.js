@@ -2,6 +2,7 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
@@ -42,9 +43,14 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new UglifyJSPlugin(),
+    new UglifyJSPlugin({
+      test: /\.js($|\?)/i
+    }),
     new CopyWebpackPlugin([{
       from: './*.html'
-    }])
+    }]),
+    new webpack.DefinePlugin({
+      PRODUCTION: JSON.stringify(true)
+    })
   ],
 }
