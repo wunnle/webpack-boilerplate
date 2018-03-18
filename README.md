@@ -3,7 +3,7 @@ Webpack 4 boilerplate uses webpack-dev-server, babel and sass loaders.
 
 ## Getting started
 
-Clone the repo and install dependencies with:
+Clone the repo and to install dependencies, run:
 
 #### `npm install` or `yarn`
 
@@ -26,7 +26,7 @@ Dev server will run on [http://localhost:8181](http://localhost:8181) by default
 
 ## Building
 
-To create a minified production build, simply run.
+To create a minified production build, simply run:
 
 #### `npm run build` or `yarn build`
 
