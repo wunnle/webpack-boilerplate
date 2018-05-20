@@ -43,7 +43,7 @@ module.exports = {
       PRODUCTION: JSON.stringify(false)
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      //inject: false,   // enable this if want to inject js/css manually
       template: 'src/html-templates/index.html'
     })
   ],
