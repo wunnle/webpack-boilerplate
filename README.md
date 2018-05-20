@@ -13,15 +13,9 @@ To run project on local with livereload:
 
 #### `npm start` or `yarn start`
 
-Dev server will watch all your imported modules for changes and auto compile them. To also watch HTML files, I used raw-loader. Since it does not make sense to import HTML files on production build, I defined a global enviroment variable using DefinePlugin to exclude them from prod build like this: 
+Dev server will watch all your imported modules for changes and auto compile them. 
 
-```
-if(!PRODUCTION) {
-  require('../index.html')
-}
-```
-
-Dev server will run on [http://localhost:8181](http://localhost:8181) by default.
+Dev server will run on [http://localhost:4242](http://localhost:4242) by default.
 
 
 ## Building
