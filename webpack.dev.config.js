@@ -47,6 +47,7 @@ module.exports = {
       template: 'src/html-templates/index.html'
     })
   ],
+  devtool: 'eval-source-map',
   devServer: {
     port: 4242,
     contentBase: './'

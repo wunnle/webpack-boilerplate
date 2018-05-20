@@ -55,4 +55,5 @@ module.exports = {
       PRODUCTION: JSON.stringify(true)
     })
   ],
+  devtool: 'source-map',
 }
