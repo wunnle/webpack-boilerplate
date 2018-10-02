@@ -45,6 +45,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('[name].css'),
     new UglifyJSPlugin({
+      sourceMap: true,
       test: /\.js($|\?)/i
     }),
     new HtmlWebpackPlugin({
