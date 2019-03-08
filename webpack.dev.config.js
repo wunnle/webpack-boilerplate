@@ -49,7 +49,7 @@ module.exports = {
   ],
   devtool: 'eval-source-map',
   devServer: {
-    port: 4242,
+    port: 0,
     contentBase: './'
   }
 }
